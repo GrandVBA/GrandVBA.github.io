@@ -1,0 +1,113 @@
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.areas {
+  height: 100vh;
+  width: 100%;
+}
+
+.message {
+  background: lightgreen;
+}
+
+.time {
+  position: relative;
+  margin: 0 -100% 0 0;
+  background: lightpink;
+}
+
+.swipe-right-message {
+  -webkit-animation: right-message 0.5s 0.3s both;
+          animation: right-message 0.5s 0.3s both;
+}
+
+.swipe-right-time {
+  -webkit-animation: right-time 0.5s 0.3s both;
+          animation: right-time 0.5s 0.3s both;
+}
+
+.swipe-left-message {
+  -webkit-animation: left-message 0.5s 0.3s both;
+          animation: left-message 0.5s 0.3s both;
+}
+
+.swipe-left-time {
+  -webkit-animation: left-time 0.5s 0.3s both;
+          animation: left-time 0.5s 0.3s both;
+}
+
+@-webkit-keyframes right-message {
+  0% {
+    margin: 0 0 0 -100%;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+@keyframes right-message {
+  0% {
+    margin: 0 0 0 -100%;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes right-time {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 -100% 0 0;
+  }
+}
+
+@keyframes right-time {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 -100% 0 0;
+  }
+}
+
+@-webkit-keyframes left-message {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 0 0 -100%;
+  }
+}
+
+@keyframes left-message {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 0 0 -100%;
+  }
+}
+
+@-webkit-keyframes left-time {
+  0% {
+    margin: 0 -100% 0 0;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+@keyframes left-time {
+  0% {
+    margin: 0 -100% 0 0;
+  }
+  100% {
+    margin: 0;
+  }
+}

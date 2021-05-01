@@ -1,0 +1,71 @@
+.app {
+  display: flex;
+  overflow: hidden;
+}
+
+.areas {
+  height: 100vh;
+  width: 100%;
+}
+
+.message {
+  background: lightgreen;
+}
+
+.time {
+  position: relative;
+  margin: 0 -100% 0 0;
+  background:lightpink;
+}
+
+.swipe-right-message {
+  animation: right-message 0.5s 0.3s both;
+}
+
+.swipe-right-time {
+  animation: right-time 0.5s 0.3s both;
+}
+
+.swipe-left-message {
+  animation: left-message 0.5s 0.3s both;
+}
+
+.swipe-left-time {
+  animation: left-time 0.5s 0.3s both;
+}
+
+@keyframes right-message {
+  0% {
+    margin: 0 0 0 -100%;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+@keyframes right-time {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 -100% 0 0;
+  }
+}
+
+@keyframes left-message {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 0 0 0 -100%;
+  }
+}
+
+@keyframes left-time {
+  0% {
+    margin: 0 -100% 0 0;
+  }
+  100% {
+    margin: 0;
+  }
+}

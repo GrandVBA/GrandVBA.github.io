@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     
     <title>Test-Rockstone</title>
   </head>
   <body>
     <div class="app">
+      <h1 class="visually-hidden">Application</h1>
       <section class="areas content">
+        <h2 class="visually-hidden">Forum</h2>
         <div class="content__control">
-          <textarea class="content__textarea" name="textarea" id="textarea" cols="25" rows="3" inputmode="text"></textarea>
+          <textarea class="content__textarea" name="textarea" id="textarea" cols="25" rows="3"></textarea>
           <button class="content__btn">
             Send
           </button>
@@ -25,7 +26,8 @@
       </section>
 
       <section class="areas time touch">
-        <article class="clock"></article>
+        <h2 class="visually-hidden">Time</h2>
+        <div class="clock"></div>
       </section>
     </div>
 
@@ -37,8 +39,6 @@
       </div>
     </template>
 
-    <script src="js/swipe.js"></script>
-    <script src="js/send-message.js"></script>
-    <script src="js/time.js"></script>
+    <script src="bundle/wp.bundle.js"></script>
   </body>
 </html>

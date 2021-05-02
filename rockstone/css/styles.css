@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.message {
+.content {
   background: lightgreen;
 }
 
@@ -20,9 +20,9 @@
   background: lightpink;
 }
 
-.swipe-right-message {
-  -webkit-animation: right-message 0.5s 0.3s both;
-          animation: right-message 0.5s 0.3s both;
+.swipe-right-content {
+  -webkit-animation: right-content 0.5s 0.3s both;
+          animation: right-content 0.5s 0.3s both;
 }
 
 .swipe-right-time {
@@ -30,9 +30,9 @@
           animation: right-time 0.5s 0.3s both;
 }
 
-.swipe-left-message {
-  -webkit-animation: left-message 0.5s 0.3s both;
-          animation: left-message 0.5s 0.3s both;
+.swipe-left-content {
+  -webkit-animation: left-content 0.5s 0.3s both;
+          animation: left-content 0.5s 0.3s both;
 }
 
 .swipe-left-time {
@@ -40,7 +40,7 @@
           animation: left-time 0.5s 0.3s both;
 }
 
-@-webkit-keyframes right-message {
+@-webkit-keyframes right-content {
   0% {
     margin: 0 0 0 -100%;
   }
@@ -49,7 +49,7 @@
   }
 }
 
-@keyframes right-message {
+@keyframes right-content {
   0% {
     margin: 0 0 0 -100%;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@-webkit-keyframes left-message {
+@-webkit-keyframes left-content {
   0% {
     margin: 0;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-@keyframes left-message {
+@keyframes left-content {
   0% {
     margin: 0;
   }

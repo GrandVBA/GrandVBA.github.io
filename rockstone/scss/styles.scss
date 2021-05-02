@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.message {
+.content {
   background: lightgreen;
 }
 
@@ -18,23 +18,23 @@
   background:lightpink;
 }
 
-.swipe-right-message {
-  animation: right-message 0.5s 0.3s both;
+.swipe-right-content {
+  animation: right-content 0.5s 0.3s both;
 }
 
 .swipe-right-time {
   animation: right-time 0.5s 0.3s both;
 }
 
-.swipe-left-message {
-  animation: left-message 0.5s 0.3s both;
+.swipe-left-content {
+  animation: left-content 0.5s 0.3s both;
 }
 
 .swipe-left-time {
   animation: left-time 0.5s 0.3s both;
 }
 
-@keyframes right-message {
+@keyframes right-content {
   0% {
     margin: 0 0 0 -100%;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes left-message {
+@keyframes left-content {
   0% {
     margin: 0;
   }

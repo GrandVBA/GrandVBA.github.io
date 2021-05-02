@@ -11,8 +11,14 @@
   <body>
     <div class="app">
 
-      <section class="areas message">
-        
+      <section class="areas content">
+        <div class="content__control">
+          <textarea class="content__textarea" name="textarea" id="textarea" cols="25" rows="3"></textarea>
+          <button class="content__btn">Send</button>
+        </div>
+        <div class="content__messages">
+
+        </div>
       </section>
 
       <section class="areas time">
@@ -20,6 +26,15 @@
       </section>
     </div>
 
+    <template id="message">
+      <div class="message">
+        <p class="text">
+          Тестовый
+        </p>
+      </div>
+    </template>
+
     <script src="js/swipe.js"></script>
+    <script src="js/send-message.js"></script>
   </body>
 </html>

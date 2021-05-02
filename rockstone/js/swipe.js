@@ -1,6 +1,6 @@
 `use strict`;
 
-const areaMessage = document.querySelector(`.message`);
+const areaContent = document.querySelector(`.content`);
 const areaTime = document.querySelector(`.time`);
 
 let initialPoint;
@@ -21,14 +21,14 @@ document.addEventListener('touchend', function(evt) {
 
   if (xAbs > 20) {
     if (finalPoint.pageX < initialPoint.pageX){
-      areaMessage.classList.add(`swipe-left-message`);
+      areaContent.classList.add(`swipe-left-content`);
       areaTime.classList.add(`swipe-left-time`);
-      areaMessage.classList.remove(`swipe-right-message`);
+      areaContent.classList.remove(`swipe-right-content`);
       areaTime.classList.remove(`swipe-right-time`);
     } else{
-      areaMessage.classList.add(`swipe-right-message`);
+      areaContent.classList.add(`swipe-right-content`);
       areaTime.classList.add(`swipe-right-time`);
-      areaMessage.classList.remove(`swipe-left-message`);
+      areaContent.classList.remove(`swipe-left-content`);
       areaTime.classList.remove(`swipe-left-time`);
     }
   }

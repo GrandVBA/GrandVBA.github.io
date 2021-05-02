@@ -1,3 +1,5 @@
+@import '_reset.scss';
+
 @font-face {
   font-family: 'OpenSans';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -10,6 +12,14 @@
   src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .app {

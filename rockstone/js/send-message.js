@@ -19,5 +19,8 @@ const renderMessage = function (text) {
 sendBtn.addEventListener(`click`, function (evt) {
   evt.preventDefault();
 
-  messagesList.appendChild(renderMessage(textArea.value));
+  if (textArea.value !== ``) {
+    messagesList.appendChild(renderMessage(textArea.value));
+    textArea.value = ``;
+  }
 });

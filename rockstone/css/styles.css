@@ -18,7 +18,6 @@
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  background: #00BFFF;
 }
 
 .touch {
@@ -32,7 +31,7 @@
 }
 
 .content {
-  border-right: 3px solid #AFEEEE;
+  border-right: 3px solid #1E90FF;
 }
 
 .content__control {
@@ -45,31 +44,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   padding: 10px;
 }
 
 .content__textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px;
-  width: 250px;
+  padding: 10px 85px 10px 10px;
+  width: 100%;
   font-size: 12px;
-  color: #fff;
+  color: #1E90FF;
   border: 2px solid #1E90FF;
-  background: #87CEFA;
   border-radius: 5px;
   outline: none;
 }
 
 .content__btn {
+  position: absolute;
+  content: '';
+  right: 20px;
+  top: 25px;
   height: 35px;
   width: 65px;
-  color: #fff;
-  background: #87CEFA;
+  color: #1E90FF;
+  background: transparent;
   border: 2px solid #1E90FF;
   border-radius: 5px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .content__btn:active {
@@ -82,17 +85,20 @@
 }
 
 .message {
-  margin: 10px 0;
+  margin: 10px 0 10px -1000px;
+  -webkit-animation: show-message 0.3s 0.2s both;
+          animation: show-message 0.3s 0.2s both;
 }
 
 .text {
   display: inline-block;
   padding: 10px;
   font-size: 13px;
+  line-height: 18px;
   color: #fff;
   word-break: break-all;
   max-width: 250px;
-  background: #87CEEB;
+  background: #1E90FF;
   border-radius: 8px;
 }
 
@@ -190,5 +196,23 @@
   }
   100% {
     margin: 0;
+  }
+}
+
+@-webkit-keyframes show-message {
+  0% {
+    margin: 10px 0 10px -1000px;
+  }
+  100% {
+    margin: 10px 0;
+  }
+}
+
+@keyframes show-message {
+  0% {
+    margin: 10px 0 10px -1000px;
+  }
+  100% {
+    margin: 10px 0;
   }
 }

@@ -7,13 +7,13 @@ let initialPoint;
 let finalPoint;
 
 document.addEventListener('touchstart', function(evt) {
-  evt.preventDefault();
+  //evt.preventDefault();
   evt.stopPropagation();
   initialPoint = evt.changedTouches[0];
 }, false);
 
 document.addEventListener('touchend', function(evt) {
-  evt.preventDefault();
+  //evt.preventDefault();
   evt.stopPropagation();
   finalPoint = evt.changedTouches[0];
 

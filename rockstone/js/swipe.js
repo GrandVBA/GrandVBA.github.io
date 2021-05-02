@@ -2,6 +2,7 @@
 
 const areaContent = document.querySelector(`.content`);
 const areaTime = document.querySelector(`.time`);
+const messages = document.querySelector(`.content__messages`);
 
 const touchArea = document.querySelectorAll(`.touch`);
 
@@ -26,6 +27,7 @@ for (let i = 0; i < touchArea.length; i++) {
     if (xAbs > 20) {
       if (finalPoint.pageX < initialPoint.pageX){
         areaContent.classList.add(`swipe-left-content`);
+        //messages.classList.add(`noscroll`);
         areaTime.classList.add(`swipe-left-time`);
         areaContent.classList.remove(`swipe-right-content`);
         areaTime.classList.remove(`swipe-right-time`);
@@ -33,6 +35,7 @@ for (let i = 0; i < touchArea.length; i++) {
         areaContent.classList.add(`swipe-right-content`);
         areaTime.classList.add(`swipe-right-time`);
         areaContent.classList.remove(`swipe-left-content`);
+        //messages.classList.remove(`noscroll`);
         areaTime.classList.remove(`swipe-left-time`);
       }
     }

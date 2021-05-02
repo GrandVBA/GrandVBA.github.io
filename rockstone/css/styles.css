@@ -82,6 +82,7 @@
 
 .content__messages {
   padding: 12px;
+  text-overflow: ellipsis;
 }
 
 .message {
@@ -103,8 +104,24 @@
 }
 
 .time {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  content: '';
+  top: 0;
+  right: 0;
   margin: 0 -100% 0 0;
+  height: 100vh;
+  color: #1E90FF;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .swipe-right-content {
@@ -148,18 +165,22 @@
 @-webkit-keyframes right-time {
   0% {
     margin: 0;
+    right: 0;
   }
   100% {
     margin: 0 -100% 0 0;
+    right: 0;
   }
 }
 
 @keyframes right-time {
   0% {
     margin: 0;
+    right: 0;
   }
   100% {
     margin: 0 -100% 0 0;
+    right: 0;
   }
 }
 
@@ -184,18 +205,22 @@
 @-webkit-keyframes left-time {
   0% {
     margin: 0 -100% 0 0;
+    right: 0;
   }
   100% {
     margin: 0;
+    right: 0;
   }
 }
 
 @keyframes left-time {
   0% {
     margin: 0 -100% 0 0;
+    right: 0;
   }
   100% {
     margin: 0;
+    right: 0;
   }
 }
 
